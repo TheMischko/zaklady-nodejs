@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+<head>
+    <meta charset="UTF-8">
+    <title>Hádání čísla</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <script src="index.js"></script>
+</head>
+<body>
+<h1>Hádání čísla</h1>
+<p>Myslím si číslo mezi 0-100, zkus uhádnout jaké.</p>
+<div>
+    <label for="tipInput">Tvůj tip:</label>
+    <input id="tipInput" type="number">
+    <button id="tipButton">Tipnout si</button>
+</div>
+<p>Pokus číslo: <span id="counter">1</span></p>
+<select id="answerSelect" disabled class="hidden">
+    <option value="up">Zkus trochu vyšší.</option>
+    <option value="down">Zkus trochu nižší.</option>
+    <option value="correct">Správně, uhádl jsi to!</option>
+</select>
+<button id="reloadButton" onclick="location.reload()" class="hidden">Hrát znovu</button>
+</body>
+</html>
